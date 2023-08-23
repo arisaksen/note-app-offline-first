@@ -38,7 +38,7 @@ import com.github.arisaksen.noteapp.components.NoteButton
 import com.github.arisaksen.noteapp.components.NoteInputText
 import com.github.arisaksen.noteapp.data.NotesDataSource
 import com.github.arisaksen.noteapp.model.Note
-import java.time.format.DateTimeFormatter
+import com.github.arisaksen.noteapp.util.formatDateForNote
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -137,6 +137,7 @@ fun NoteRow(
     note: Note,
     onNoteClicked: (Note) -> Unit
 ) {
+
     Surface(
         modifier = modifier
             .padding(4.dp)
@@ -154,7 +155,7 @@ fun NoteRow(
             Text(text = note.title, style = MaterialTheme.typography.titleMedium)
             Text(text = note.description, style = MaterialTheme.typography.bodyMedium)
             Text(
-                text = note.entryDate.format(DateTimeFormatter.ofPattern("EEE, d MMM")),
+                text = note.entryDate.formatDateForNote("EEEE, d MMM hh:mm aaa"),
                 style = MaterialTheme.typography.labelMedium
             )
         }
