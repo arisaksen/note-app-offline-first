@@ -1,0 +1,18 @@
+name: NoteApp
+id: 'ari:cloud:compass:17e2f6fa-97ac-482d-bf1c-80cc6106fa61:component/53984cd1-e817-4502-be63-8cd57ff03042/c627d150-36e2-42bb-ad57-e37483f0476c'
+description: null
+configVersion: 1
+typeId: APPLICATION
+ownerId: 'ari:cloud:identity::team/37c9e4a7-89a8-42c1-9266-e4c67d0b5ac5'
+fields:
+  tier: 4
+links:
+  - name: null
+    type: REPOSITORY
+    url: 'https://github.com/arisaksen/note-app-offline-first'
+relationships: { }
+labels: null
+customFields: null
+
+# Learn more about formatting compass.yml:
+# https://go.atlassian.com/compass-yml-format
